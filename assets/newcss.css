@@ -156,7 +156,9 @@ img {
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
-
+.home__lottie {
+  transform: translateX(-100%); /* Move it completely to the left */
+}
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -262,6 +264,8 @@ img {
 /*========HOME=============*/
 .home__container {
   gap: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 .home__content {
   grid-template-columns: 0.5fr 3fr;
@@ -294,8 +298,12 @@ img {
   padding-left: 30px;
 }
 .home__data {
-  grid-column: 1/3;
+  grid-column: 1 / 3; 
+  margin-left: 0; 
+  margin-right: 0; 
+  padding: 0; 
 }
+
 
 .home__title {
   font-size: var(--big-font-size);
@@ -1162,4 +1170,5 @@ img {
   .button--white {
     bottom: -4.5rem;
   }
+  
 }
