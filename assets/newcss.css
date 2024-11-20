@@ -470,14 +470,15 @@ img {
 }
 
 .skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  justify-items: center;
 }
 
 .skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
+  display: block;
+  margin-bottom: 8px;
 }
 
 .skills__name {
